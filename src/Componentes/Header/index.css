@@ -257,10 +257,9 @@ header.scroll-menu.tema-escuro {
         display: block;
         position: absolute;
         z-index: 4;
-        right: 15%;
+        right: 16%;
         width: 30px;
-        height: 44px;
-        cursor: pointer;
+        height: 30px;
     }
 
     .hamburguer-menu,
@@ -273,14 +272,15 @@ header.scroll-menu.tema-escuro {
     .hamburguer-menu,
     .hamburguer-menu::before,
     .hamburguer-menu::after {
-        width: 30px;
-        height: 6px;
         position: absolute;
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
     }
 
     .hamburguer-menu {
         top: 50%;
-        left: 10%;
+        left: 5%;
     }
 
     .hamburguer-menu::before {

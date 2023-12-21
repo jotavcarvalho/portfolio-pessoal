@@ -1,0 +1,118 @@
+.principal,
+.principal-modo-escuro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 492px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 5px;
+    /* transition: .2s; */
+}
+
+.principal {
+    background-color: #aeadad;
+    box-shadow: 0px 0px 10px 5px gray;
+}
+
+.principal-modo-escuro {
+    background-color: #0e3448;
+    box-shadow: 0px 0px 10px 5px gray;
+}
+
+/* 
+.principal:hover{
+    transform: scale(1.02);
+} */
+
+.imagem img {
+    width: 500px;
+    padding: 10px 60px;
+    transform: scale(1.2);
+}
+
+/* paragrafo em ambos os temas */
+
+.principal p,
+.principal-modo-escuro p {
+    text-align: start;
+    font-size: 20px;
+}
+
+.principal p {
+    color: #f3f3f3;
+}
+
+.principal-modo-escuro p {
+    color: #82c6ad;
+}
+
+.principal p:nth-child(3) , .principal-modo-escuro p:nth-child(3){
+   text-align: center;
+   width: calc(100% - 20px);
+}
+
+.principal p:nth-child(2) , .principal-modo-escuro p:nth-child(2){
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+
+/*botões em ambos os temas*/
+
+.btn,
+.btn-modo-escuro {
+    display: flex;
+    justify-content: space-between;
+    width: calc(90% - 20px);
+
+}
+
+.btn a,
+.btn-modo-escuro a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.btn a {
+    color: #f3f3f3;
+    background-color: gray;
+}
+
+.btn-modo-escuro a {
+    color: #f3f3f3;
+    background-color: #82c6ad;
+}
+
+.btn a:hover,
+.btn-modo-escuro a:hover {
+    background-color: transparent;
+    border: 2px solid gray;
+}
+
+/*responsivo*/
+
+@media (max-width:401px){
+    .principal,
+    .principal-modo-escuro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 5px;
+    }
+
+    .imagem img {
+        width: 400px;
+        padding: 10px 60px;
+        transform: scale(1.2);
+    }
+}

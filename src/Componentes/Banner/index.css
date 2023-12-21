@@ -1,0 +1,154 @@
+/* import da font */
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+/*cor do banner*/
+
+.banner{
+    background-image: linear-gradient(to right, #f9f6f7,#C9CBFF ,#FFE5B9);
+    background-size: 500% 100%;
+    height: 90vh;
+    animation: degrade-banner 5s infinite alternate;
+}
+
+.banner-modo-escuro{
+    background-image: linear-gradient(to right, #092635, #267298,#032f45);
+    background-size: 500% 100%;
+    height: 90vh;
+    animation: degrade-banner 5s infinite alternate;
+}
+
+/* animação do background do banner */
+@keyframes degrade-banner {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+/*classes de agrupamento*/
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.agrupa-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+
+/*titulo em ambos os temas*/
+.titulo-principal,.titulo-principal-modo-escuro{
+    font-family: 'GFS Didot', serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-bottom: 5px;
+    letter-spacing: 10px;
+}
+
+.titulo-principal-modo-escuro{
+
+    color:#9EC8B9;
+}
+
+/*icones em ambos os temas*/
+.icones-redes-sociais{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+.icones-redes-sociais i{
+    display: inline-block;
+    color:#888888;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.icones-redes-sociais i:hover{
+    transform: scale(1.05);
+    color: #363535;
+}
+
+.icones-redes-sociais-modo-escuro{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+.icones-redes-sociais-modo-escuro i{
+    display: inline-block;
+    color:#5C8374;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.icones-redes-sociais-modo-escuro i:hover{
+    transform: scale(1.05);
+    color: #9EC8B9;
+}
+
+
+/*botão em ambos os temas*/
+.btn-cv a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#f3f3f3;
+    border: 1px solid #000;
+    border-radius:20px;
+    background-color: rgba(0,0,0,0.7);    
+    opacity: .5;
+    transition: .5s;
+}
+
+.btn-cv a:hover{
+    color:rgba(0,0,0,0.7);
+    background-color: #f3f3f3;    
+    transform: scale(1.05);
+}
+
+.btn-cv-modo-escuro a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#f3f3f3;
+    border: 1px solid #9EC8B9;
+    border-radius:20px;
+    background-color: rgba(0,0,0,0.7);    
+    opacity: .5;
+    transition: .5s;
+}
+
+.btn-cv-modo-escuro a:hover{
+    color:#092635;
+    background-color:#9EC8B9 ;    
+    transform: scale(1.05);
+}
+
+
+/*responsivo*/
+
+@media (max-width:401px){
+    .titulo-principal,.titulo-principal-modo-escuro{
+        font-family: 'GFS Didot', serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 5px;
+        letter-spacing: 10px;
+    }
+}

@@ -1,0 +1,39 @@
+/* fundo da section projetos em ambos os temas */
+
+.projetos, .projetos-modo-escuro{
+    padding-bottom: 50px;
+}
+
+.projetos{
+    background-color: #e7e7e7;
+}
+
+.projetos-modo-escuro{
+    background-color: #11415a;
+}
+
+/*titulo em ambos os temas*/
+
+.titulo-projeto, .titulo-projeto-modo-escuro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 30px;
+    font-size: 32px;
+}
+
+.titulo-projeto-modo-escuro{
+    color:#9EC8B9;
+}
+
+/*container de exibição dos cards de projetos em ambos os temas*/
+
+.container-projetos, .container-projetos-modo-escuro{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex:1 1 400px;
+    width: 100%;
+    gap:40px;
+}

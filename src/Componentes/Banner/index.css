@@ -143,7 +143,29 @@
 
 /*responsivo*/
 
-@media (max-width:401px){
+@media (min-width:482px) and (max-width: 768px) {
+   
+    .banner,.banner-modo-escuro{
+        height: 70vh;
+    }
+
+
+    .titulo-principal,.titulo-principal-modo-escuro{
+        font-size: 40px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+
+    .agrupa-inicio{
+        align-items: center;
+        padding:0 20px;
+    }
+
+
+}
+
+@media (max-width:481px){
 
     .banner,.banner-modo-escuro{
         height: 70vh;

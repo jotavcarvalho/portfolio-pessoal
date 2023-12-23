@@ -98,7 +98,57 @@
 
 /*responsivo*/
 
-@media (max-width:401px) {
+@media (min-width:769px) and (max-width: 1200px) {
+
+    .principal,
+    .principal-modo-escuro {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+
+    
+    .btn,
+    .btn-modo-escuro {
+        width: calc(75% - 20px);
+
+    }
+
+  
+
+}
+
+@media (min-width:482px) and (max-width: 768px) {
+   
+    .principal,
+    .principal-modo-escuro {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    .btn,
+    .btn-modo-escuro {
+        width: calc(80% - 20px);
+
+    }
+
+    .btn a,
+    .btn-modo-escuro a {
+        padding: 10px;
+    }
+
+
+}
+
+@media (max-width:481px) {
 
     .principal,
     .principal-modo-escuro {
@@ -109,7 +159,6 @@
     .imagem img {
         width: 100%;
         padding: 15px;
-        transform: scale(1.2);
     }
 
     .btn,

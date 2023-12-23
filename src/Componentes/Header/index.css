@@ -151,7 +151,7 @@ header.scroll-menu.tema-escuro {
 
 /* menu mobile  */
 
-@media (min-width:402px) and (max-width: 768px) {
+@media (min-width:482px) and (max-width: 768px) {
 
     .icon {
         display: block;
@@ -250,7 +250,7 @@ header.scroll-menu.tema-escuro {
 
 }
 
-@media (max-width: 401px) {
+@media (max-width: 481px) {
 
 
     .icon {

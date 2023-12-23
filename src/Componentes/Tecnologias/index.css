@@ -17,32 +17,6 @@
 }
 
 
-.titulo::before{
-    position: absolute;
-    content: '';
-    width: 50%;
-    height: 3.5px;
-    top: 90px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #16161d;
-    border-radius: 5px;
-}
-
-.titulo-modo-escuro::before{
-    position: absolute;
-    content: '';
-    width: 50%;
-    height: 3.5px;
-    top: 90px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #0f3549;
-    border-radius: 5px;
-}
-
-
-
 /**/
 .tecnologias-content{
     display: flex;
